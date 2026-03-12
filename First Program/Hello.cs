@@ -20,7 +20,9 @@ namespace First_Program
             //Even_Using_Dowhile obj = new Even_Using_Dowhile();
 
             //Tables obj = new Tables();
-            Tables_while obj = new Tables_while();
+            //Tables_while obj = new Tables_while();
+            //DebugDemo obj = new DebugDemo();
+              ExtensionMethods obj = new ExtensionMethods();
         }
     }
 }
