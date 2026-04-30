@@ -1,0 +1,146 @@
+[
+    {
+        "id": "INC004",
+        "title": "Network switch offline in DC rack B",
+        "type": "network",
+        "severity": "critical",
+        "assigned_team": "Network Team",
+        "tickets": {
+            "jira": "JIRA: IT-915",
+            "snow": "SNOW:MOCK-SNOW-INC004",
+            "azure": "AZURE:1421"
+        }
+    },
+    {
+        "id": "INC005",
+        "title": "Ransomware signature detected on workstation",
+        "type": "security",
+        "severity": "critical",
+        "assigned_team": "Security Team",
+        "tickets": {
+            "jira": "JIRA: IT-940",
+            "snow": "SNOW:MOCK-SNOW-INC005",
+            "azure": "AZURE:4956"
+        }
+    },
+    {
+        "id": "INC001",
+        "title": "Database connection timeout on prod-db01",
+        "type": "general",
+        "severity": "high",
+        "assigned_team": "DB Team",
+        "tickets": {
+            "jira": "JIRA: IT-761",
+            "snow": "SNOW:MOCK-SNOW-INC001",
+            "azure": "AZURE:4707"
+        }
+    },
+    {
+        "id": "INC002",
+        "title": "Suspicious login attempts from unknown IP",
+        "type": "security",
+        "severity": "high",
+        "assigned_team": "Security Team",
+        "tickets": {
+            "jira": "JIRA: IT-501",
+            "snow": "SNOW:MOCK-SNOW-INC002",
+            "azure": "AZURE:7849"
+        }
+    },
+    {
+        "id": "INC003",
+        "title": "Checkout service returning NullPointerException",
+        "type": "app",
+        "severity": "high",
+        "assigned_team": "App Team",
+        "tickets": {
+            "jira": "JIRA: IT-166",
+            "snow": "SNOW:MOCK-SNOW-INC003",
+            "azure": "AZURE:5879"
+        }
+    },
+    {
+        "id": "INC006",
+        "title": "Payment gateway timeout Stripe API HTTP503",
+        "type": "app",
+        "severity": "high",
+        "assigned_team": "App Team",
+        "tickets": {
+            "jira": "JIRA: IT-141",
+            "snow": "SNOW:MOCK-SNOW-INC006",
+            "azure": "AZURE:1868"
+        }
+    },
+    {
+        "id": "INC008",
+        "title": "Phishing email reported by employees",
+        "type": "security",
+        "severity": "high",
+        "assigned_team": "Security Team",
+        "tickets": {
+            "jira": "JIRA: IT-471",
+            "snow": "SNOW:MOCK-SNOW-INC008",
+            "azure": "AZURE:7404"
+        }
+    },
+    {
+        "id": "INC007",
+        "title": "Intermittent packet loss on VLAN 30",
+        "type": "network",
+        "severity": "medium",
+        "assigned_team": "Network Team",
+        "tickets": {
+            "jira": "JIRA: IT-385",
+            "snow": "SNOW:MOCK-SNOW-INC007",
+            "azure": "AZURE:4495"
+        }
+    },
+    {
+        "id": "INC009",
+        "title": "API response slow P95 latency issue",
+        "type": "app",
+        "severity": "medium",
+        "assigned_team": "App Team",
+        "tickets": {
+            "jira": "JIRA: IT-770",
+            "snow": "SNOW:MOCK-SNOW-INC009",
+            "azure": "AZURE:6451"
+        }
+    },
+    {
+        "id": "INC012",
+        "title": "DNS resolution intermittent on 10.2.0.0 network",
+        "type": "network",
+        "severity": "medium",
+        "assigned_team": "Network Team",
+        "tickets": {
+            "jira": "JIRA: IT-151",
+            "snow": "SNOW:MOCK-SNOW-INC012",
+            "azure": "AZURE:6883"
+        }
+    },
+    {
+        "id": "INC010",
+        "title": "Scheduled job failed non production env",
+        "type": "app",
+        "severity": "low",
+        "assigned_team": "App Team",
+        "tickets": {
+            "jira": "JIRA: IT-174",
+            "snow": "SNOW:MOCK-SNOW-INC010",
+            "azure": "AZURE:7383"
+        }
+    },
+    {
+        "id": "INC011",
+        "title": "Minor firewall rule misconfiguration found",
+        "type": "network",
+        "severity": "low",
+        "assigned_team": "Security Team",
+        "tickets": {
+            "jira": "JIRA: IT-939",
+            "snow": "SNOW:MOCK-SNOW-INC011",
+            "azure": "AZURE:9213"
+        }
+    }
+]

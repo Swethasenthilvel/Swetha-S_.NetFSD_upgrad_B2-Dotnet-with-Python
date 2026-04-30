@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Incident Report</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f5;
+    font-size: 13px;
+    overflow: hidden; 
+}
+
+/* HEADER */
+.header {
+    background: #1f3c88;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+}
+
+/* CONTAINER */
+.container {
+    padding: 8px 12px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* CARDS */
+.card-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+    font-size: 13px;
+}
+
+/* BADGE */
+.badge {
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* COLORS */
+.critical { background: #ffcccc; color: red; }
+.high { background: #ffe0b3; color: #cc7a00; }
+.medium { background: #cce5ff; color: #004085; }
+.low { background: #d4edda; color: #155724; }
+
+/* SECTION */
+.section {
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.section b {
+    display: inline-block;
+    width: 70px;
+}
+
+/* TABLE WRAPPER */
+.table-wrapper {
+    width: 100%;
+    flex: 1;
+    overflow: auto; 
+    border-radius: 6px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    table-layout: auto;
+}
+
+/* TABLE CELLS */
+th, td {
+    padding: 9px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* HEADER */
+th {
+    background: #1f3c88;
+    color: white;
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+}
+
+/* TITLE COLUMN */
+td:nth-child(2), th:nth-child(2) {
+    text-align: left;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td:nth-child(3), th:nth-child(3) {
+    width: 160px;   
+}
+
+/* LEFT ALIGN */
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(5) {
+    text-align: left;
+}
+
+/* HOVER */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 6px;
+    font-size: 11px;
+    color: gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    IT Incident Auto-Triage Report |
+    Generated: 2026-04-29 11:08 |
+    Total: 12
+</div>
+
+<div class="container">
+
+<div class="card-box">
+    <div class="card">12<br>Total</div>
+    <div class="card critical">2<br>Critical</div>
+    <div class="card high">5<br>High</div>
+    <div class="card medium">3<br>Medium</div>
+    <div class="card low">2<br>Low</div>
+</div>
+
+<div class="section"><b>Type:</b>
+<span class="badge">network:4</span> <span class="badge">security:3</span> <span class="badge">general:1</span> <span class="badge">app:4</span> </div><div class='section'><b>Severity:</b> <span class="badge critical">critical:2</span> <span class="badge high">high:5</span> <span class="badge medium">medium:3</span> <span class="badge low">low:2</span> </div><div class='section'><b>Team:</b> <span class="badge">Network Team:3</span> <span class="badge">Security Team:4</span> <span class="badge">DB Team:1</span> <span class="badge">App Team:4</span> </div>
+<div class="table-wrapper">
+<table>
+<tr>
+<th>ID</th>
+<th>Title</th>
+<th>Severity</th>
+<th>Type</th>
+<th>Team</th>
+<th>Time</th>
+<th>SNOW</th>
+<th>JIRA</th>
+<th>AZURE</th>
+</tr>
+
+<tr>
+<td>INC004</td>
+<td title="Network switch offline in DC rack B">Network switch offline in DC rack B</td>
+<td><span class="badge critical">CRITICAL</span></td>
+<td>network</td>
+<td>Network Team</td>
+<td>04-20 13:00</td>
+<td>SNOW:MOCK-SNOW-INC004</td>
+<td>JIRA: IT-915</td>
+<td>AZURE:1421</td>
+</tr>
+
+<tr>
+<td>INC005</td>
+<td title="Ransomware signature detected on workstation">Ransomware signature detected on workstation</td>
+<td><span class="badge critical">CRITICAL</span></td>
+<td>security</td>
+<td>Security Team</td>
+<td>04-20 14:00</td>
+<td>SNOW:MOCK-SNOW-INC005</td>
+<td>JIRA: IT-940</td>
+<td>AZURE:4956</td>
+</tr>
+
+<tr>
+<td>INC001</td>
+<td title="Database connection timeout on prod-db01">Database connection timeout on prod-db01</td>
+<td><span class="badge high">HIGH</span></td>
+<td>general</td>
+<td>DB Team</td>
+<td>04-20 10:00</td>
+<td>SNOW:MOCK-SNOW-INC001</td>
+<td>JIRA: IT-761</td>
+<td>AZURE:4707</td>
+</tr>
+
+<tr>
+<td>INC002</td>
+<td title="Suspicious login attempts from unknown IP">Suspicious login attempts from unknown IP</td>
+<td><span class="badge high">HIGH</span></td>
+<td>security</td>
+<td>Security Team</td>
+<td>04-20 11:00</td>
+<td>SNOW:MOCK-SNOW-INC002</td>
+<td>JIRA: IT-501</td>
+<td>AZURE:7849</td>
+</tr>
+
+<tr>
+<td>INC003</td>
+<td title="Checkout service returning NullPointerException">Checkout service returning NullPointerException</td>
+<td><span class="badge high">HIGH</span></td>
+<td>app</td>
+<td>App Team</td>
+<td>04-20 12:00</td>
+<td>SNOW:MOCK-SNOW-INC003</td>
+<td>JIRA: IT-166</td>
+<td>AZURE:5879</td>
+</tr>
+
+<tr>
+<td>INC006</td>
+<td title="Payment gateway timeout Stripe API HTTP503">Payment gateway timeout Stripe API HTTP503</td>
+<td><span class="badge high">HIGH</span></td>
+<td>app</td>
+<td>App Team</td>
+<td>04-20 15:00</td>
+<td>SNOW:MOCK-SNOW-INC006</td>
+<td>JIRA: IT-141</td>
+<td>AZURE:1868</td>
+</tr>
+
+<tr>
+<td>INC008</td>
+<td title="Phishing email reported by employees">Phishing email reported by employees</td>
+<td><span class="badge high">HIGH</span></td>
+<td>security</td>
+<td>Security Team</td>
+<td>04-20 17:00</td>
+<td>SNOW:MOCK-SNOW-INC008</td>
+<td>JIRA: IT-471</td>
+<td>AZURE:7404</td>
+</tr>
+
+<tr>
+<td>INC007</td>
+<td title="Intermittent packet loss on VLAN 30">Intermittent packet loss on VLAN 30</td>
+<td><span class="badge medium">MEDIUM</span></td>
+<td>network</td>
+<td>Network Team</td>
+<td>04-20 16:00</td>
+<td>SNOW:MOCK-SNOW-INC007</td>
+<td>JIRA: IT-385</td>
+<td>AZURE:4495</td>
+</tr>
+
+<tr>
+<td>INC009</td>
+<td title="API response slow P95 latency issue">API response slow P95 latency issue</td>
+<td><span class="badge medium">MEDIUM</span></td>
+<td>app</td>
+<td>App Team</td>
+<td>04-20 18:00</td>
+<td>SNOW:MOCK-SNOW-INC009</td>
+<td>JIRA: IT-770</td>
+<td>AZURE:6451</td>
+</tr>
+
+<tr>
+<td>INC012</td>
+<td title="DNS resolution intermittent on 10.2.0.0 network">DNS resolution intermittent on 10.2.0.0 network</td>
+<td><span class="badge medium">MEDIUM</span></td>
+<td>network</td>
+<td>Network Team</td>
+<td>04-20 21:00</td>
+<td>SNOW:MOCK-SNOW-INC012</td>
+<td>JIRA: IT-151</td>
+<td>AZURE:6883</td>
+</tr>
+
+<tr>
+<td>INC010</td>
+<td title="Scheduled job failed non production env">Scheduled job failed non production env</td>
+<td><span class="badge low">LOW</span></td>
+<td>app</td>
+<td>App Team</td>
+<td>04-20 19:00</td>
+<td>SNOW:MOCK-SNOW-INC010</td>
+<td>JIRA: IT-174</td>
+<td>AZURE:7383</td>
+</tr>
+
+<tr>
+<td>INC011</td>
+<td title="Minor firewall rule misconfiguration found">Minor firewall rule misconfiguration found</td>
+<td><span class="badge low">LOW</span></td>
+<td>network</td>
+<td>Security Team</td>
+<td>04-20 20:00</td>
+<td>SNOW:MOCK-SNOW-INC011</td>
+<td>JIRA: IT-939</td>
+<td>AZURE:9213</td>
+</tr>
+
+</table>
+</div>
+
+<footer>
+    Generated by Swetha | IT Incident Tracker
+</footer>
+
+</div>
+</body>
+</html>
