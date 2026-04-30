@@ -1,0 +1,342 @@
+
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fb;
+}
+
+#dashboardView,
+#employeeView {
+  padding-top: 80px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= LOGIN / SIGNUP ================= */
+.auth-bg {
+  height: 100vh;
+  background: linear-gradient(135deg, #2b3c8f, #3a6cff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 380px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.auth-icon {
+  width: 60px;
+  height: 60px;
+  background: #3a6cff;
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 24px;
+}
+
+/* ================= INPUTS ================= */
+input,
+select {
+  border-radius: 8px !important;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* ================= BUTTONS ================= */
+button {
+  border-radius: 8px !important;
+  padding: 10px;
+  font-weight: 500;
+}
+
+/* ================= LINKS ================= */
+a {
+  color: #3a6cff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.navbar .btn {
+  background: transparent;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.35);
+  transition: 0.3s;
+}
+
+.navbar .btn:hover {
+  background: rgba(255,255,255,0.12);
+  color: #fff !important;
+}
+
+.navbar .btn.active {
+  background: #fff !important;
+  color: #0d6efd !important;
+  font-weight: 600;
+  border-color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ================= CARD ================= */
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow-x: hidden;
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  background: #fff;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.text-block h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.card-label {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Icon */
+.card-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Colors */
+.bg-primary-light { background: #eef2ff; }
+.bg-success-light { background: #e8f8f0; }
+.bg-danger-light  { background: #fdecec; }
+.bg-warning-light { background: #fff6e5; }
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  table-layout: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #f8f9fc;
+}
+
+.table td,
+.table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Alternate rows */
+.table tbody tr:nth-child(even) {
+  background: #f9fbff;
+}
+
+#employeeView td:last-child,
+#employeeView th:last-child {
+  white-space: nowrap;
+}
+
+/* ================= BADGES ================= */
+.badge {
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 11px;
+}
+
+/* ================= AVATAR ================= */
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #3a6cff;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.delete-icon {
+  font-size: 40px;
+  color: #dc3545; 
+  margin-top: 20px;
+}
+/* ================= SORT ================= */
+.sortable {
+  cursor: pointer;
+}
+
+.sort-icon,
+.sort-arrow {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.sortable:hover .sort-icon,
+.sortable:hover .sort-arrow {
+  color: #333;
+}
+
+/* ================= FILTER BUTTON ACTIVE ================= */
+#filterAll,
+#filterActive,
+#filterInactive {
+  border-radius: 8px !important;
+}
+
+#filterAll.active,
+#filterActive.active,
+#filterInactive.active {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+  border-color: #0d6efd !important;
+}
+
+#filterAll.btn-outline-primary,
+#filterActive.btn-outline-primary,
+#filterInactive.btn-outline-primary {
+  background-color: #fff !important;
+  color: #0d6efd !important;
+}
+
+/* ================= MODAL ================= */
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-header {
+  background: #1f2f6f;
+  color: #fff;
+}
+
+.modal-body input,
+.modal-body select {
+  border-radius: 8px;
+}
+
+/* ================= PAGINATION ================= */
+.pagination {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.page-item .page-link {
+  border-radius: 8px;
+  margin: 0 4px;
+  color: #0d6efd;
+  border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link {
+  background: #0d6efd !important;
+  color: #fff !important;
+  border-color: #0d6efd !important;
+}
+
+.page-item.disabled .page-link {
+  color: #999 !important;
+  background: #f8f9fa !important;
+}
+
+/* ================= ACTION BUTTONS ================= */
+#addEmpBtnNav,
+#addEmpTopBtn,
+#addEmpBtn {
+  white-space: nowrap;
+}
+
+/* ================= VIEWER NOTICE ================= */
+#viewerNotice {
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  padding: 4px 10px;
+  line-height: 1.2;
+}
+
+#viewerNotice:not(.d-none) + .card {
+  margin-top: 0 !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+#viewerNotice:not(.d-none) + .card .mb-3 {
+  margin-bottom: 6px !important;
+}
+
+#viewerNotice:not(.d-none) + .card .table td,
+#viewerNotice:not(.d-none) + .card .table th {
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+#viewerNotice:not(.d-none) + .card .pagination {
+  margin-top: 4px !important;
+  margin-bottom: 0 !important;
+}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .dashboard-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 6px;
+  }
+}
